@@ -111,6 +111,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }while (cursor.moveToNext());
         }
 
+        cursor.close();
+
         db.close();
 
         return notes;
